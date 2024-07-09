@@ -1,0 +1,406 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>courses Website</title>
+
+    <link rel="stylesheet" href="wt.css">
+    <style> .c-item {
+      height: 480px;
+    }
+    
+    .c-img {
+      height: 100%;
+      object-fit: cover;
+      filter: brightness(0.6);
+    }</style>
+    <!-- Bootstrap Link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Bootstrap Link -->
+    <link href="https://fonts.googleapis.com/css2?family=poppins:wght@400;500;700&display=swap"rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <!-- Font Awesome Cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"><!-- Font Awesome Cdn -->
+
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <!-- Google Fonts -->
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg" id="navbar">
+        <div class="container">
+          <a class="navbar-brand" href="index.html" id="logo"><span>C</span>ourses
+            <img src="C:\Users\Renuka\Pictures\Saved Pictures\logo.jpg"
+             height="50px"width="50px"></a>
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+            <span><i class="fa-solid fa-bars"></i></span>
+          </button>
+          <div class="collapse navbar-collapse" id="mynavbar">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item">
+                <a class="nav-link active" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Registration-form.html">Register</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="projects_wt.html">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="wt_contact.html">contact</a>
+              </li>
+            </ul>
+            <li><a href="signin form.html" class="signin-btn"><snap><b>Sign In</b></snap></a>
+          </div>
+        </div>
+      </nav>
+      <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+    
+        <div class="carousel-inner">
+          <div class="carousel-item active c-item">
+            <img src="C:\Users\Renuka\Pictures\Saved Pictures\site1.jpg" class="d-block w-100 c-img" alt="Slide 1">
+            <div class="carousel-caption top-0 mt-4">
+              <p class="mt-5 fs-3 text-uppercase">Welcome you to Learn Courses</p>
+              <h1 class="display-1 fw-bolder text-capitalize">Register now..</h1>
+              <a href="Registration-form.html">
+              <button class="btn btn-primary px-4 py-2 fs-5 mt-5">Register</button></a>
+            </div>
+          </div>
+          <div class="carousel-item c-item">
+            <img src="C:\Users\Renuka\Pictures\Saved Pictures\site2.jpg" class="d-block w-100 c-img" alt="Slide 2">
+            <div class="carousel-caption top-0 mt-4">
+              <p class="text-uppercase fs-3 mt-5">Choose courses to learn</p>
+              <p class="display-1 fw-bolder text-capitalize">Book a slot</p>
+              <a href="#packages">
+              <button class="btn btn-primary px-4 py-2 fs-5 mt-5" data-bs-toggle="modal"
+                data-bs-target="#booking-modal">Book</button></a>
+            </div>
+          </div>
+          <div class="carousel-item c-item">
+            <img src="C:\Users\Renuka\Pictures\Saved Pictures\site3.jpg" class="d-block w-100 c-img" alt="Slide 3">
+            <div class="carousel-caption top-0 mt-4">
+              <p class="text-uppercase fs-3 mt-5">All Sources provided</p>
+              <p class="display-1 fw-bolder text-capitalize">checkout</p>
+              <a href="#projects">
+              <button class="btn btn-primary px-4 py-2 fs-5 mt-5" data-bs-toggle="modal"
+                data-bs-target="#booking-modal">Check</button></a>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#hero-carousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#hero-carousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+   <!--<div class="home">
+        <div class="content">
+            <h5>Welcome You to Learn Courses</h5>
+            <h1>Learn <span class="changecontent"></span></h1>
+            <p>we are here to guide you..many projects are waiting for you</p>
+            <a href="#book">Register now</a>
+        </div>
+    </div>
+    <section class="book" id="book">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 py-3 py-md-0">
+            <div class="card">
+              <img src="./images/book-img.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>-->
+    <section class="packages" id="packages">
+      <div class="container">
+        <div class="main-txt">
+          <h1><span>C</span>ourses</h1>
+        </div>
+        <div class="row" style="margin-top: 30px;">
+          <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+              <img src="C:\python.png" alt="c++"width="80"height="80">
+              <div class="card-body">
+                <h3>Python</h3>
+                <p>learn from basic to advanced</p>
+                <div class="star">
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star "></i>
+                  <i class="fa-solid fa-star "></i>
+                </div>
+                <h6>Price: <strong>$500</strong></h6>
+                <a href="bookslot.html">Book Slot</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+              <img src="C:\datascience.png" alt="c++"width="80"height="80">
+              <div class="card-body">
+                <h3>Data Science</h3>
+                <p>learn from basic to advanced</p>
+                <div class="star">
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star "></i>
+                  <i class="fa-solid fa-star "></i>
+                </div>
+                <h6>Price: <strong>$500</strong></h6>
+                <a href="bookslot.html">Book slot</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+              <img src="C:\c++.png" alt="c++"width="80"height="80">
+              <div class="card-body">
+                <h3>C++</h3>
+                <p>learn from basic to advanced</p>
+                <div class="star">
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star "></i>
+                  <i class="fa-solid fa-star "></i>
+                </div>
+                <h6>Price: <strong>$500</strong></h6>
+                <a href="bookslot.html">Book slot</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row" style="margin-top: 30px;">
+          <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+              <img src="C:\c-lan.jpg" alt="c"width="80"height="80">
+              <div class="card-body">
+                <h3><span>C</span>-programming</h3>
+                <p>learn from basic to advanced</p>
+                <div class="star">
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star "></i>
+                  <i class="fa-solid fa-star "></i>
+                </div>
+                <h6>Price: <strong>$500</strong></h6>
+                <a href="bookslot.html">Book slot</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+              <img src="C:\js.jpg" alt="c"width="80"height="80">
+              <div class="card-body">
+                <h3>Javascript</h3>
+                <p>learn from basic to advanced</p>
+                <div class="star">
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star "></i>
+                  <i class="fa-solid fa-star "></i>
+                </div>
+                <h6>Price: <strong>$500</strong></h6>
+                <a href="bookslot.html">Book Slot</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+              <img src="C:\web.jpg" alt="c"width="80"height="80">
+              <div class="card-body">
+                <h3>Web Development</h3>
+                <p>learn from basic to advanced</p>
+                <div class="star">
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star "></i>
+                  <i class="fa-solid fa-star "></i>
+                </div>
+                <h6>Price: <strong>$500</strong></h6>
+                <a href="bookslot.html">Book slot</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="projects" id="projects">
+      <div class="container">
+        <div class="main-txt">
+          <h1><span>S</span>ervices</h1>
+        </div>
+        <div class="row" style="margin-top: 30px;">
+          <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+              <i class="bi bi-file-earmark-arrow-down"></i>
+              <div class="card-body">
+                <h3>Download</h3>
+                <p>video sessions for later</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 py-3 py-md-0">
+
+            <div class="card">
+              <i class="bi bi-browser-chrome"></i>
+              <div class="card-body">
+                <h3>Online</h3>
+                <p>interactive sessions</p>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-md-4 py-3 py-md-0">
+
+            <div class="card">
+              <i class="bi bi-card-text"></i>
+              <div class="card-body">
+                <h3>Doubt sessions</h3>
+                <p>every sunday</p>
+              </div>
+            </div>
+          </div>
+        <div class="row" style="margin-top: 30px;">
+          <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+              <i class="bi bi-book"></i>
+              <div class="card-body">
+                <h3>Notes</h3>
+                <p>for every topic</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+              <i class="bi bi-code-square"></i>
+              <div class="card-body">
+                <h3>Projects</h3>
+                <p>for future</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+              <i class="bi bi-journal-check"></i>
+              <div class="card-body">
+                <h3>Assignments</h3>
+                <p>on every topic</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+    </section>
+    <!--<section class="gallary" id="gallary">
+      <div class="container">
+
+        <div class="main-txt">
+          <h1><span>G</span>allary</h1>
+        </div>
+
+        <div class="row" style="margin-top: 30px;">
+          <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+              <img src="./images/g1.png" alt="" height="230px">
+            </div>
+          </div>
+          <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+              <img src="./images/g2.png" alt="" height="230px">
+            </div>
+          </div>
+          <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+              <img src="./images/g3.png" alt="" height="230px">
+            </div>
+          </div>
+        </div>
+
+
+        <div class="row" style="margin-top: 30px;">
+          <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+              <img src="./images/g4.png" alt="" height="230px">
+            </div>
+          </div>
+          <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+              <img src="./images/g5.png" alt="" height="230px">
+            </div>
+          </div>
+          <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+              <img src="./images/g6.png" alt="" height="230px">
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>-->
+    <section class="about" id="about">
+      <div class="container">
+
+        <div class="main-txt">
+          <h1>About <span>Us</span></h1>
+        </div>
+
+        <div class="row" style="margin-top: 50px;">
+
+          <div class="col-md-6 py-3 py-md-0">
+            <div class="card">
+              <img src="C:\Users\Renuka\Pictures\Saved Pictures\img.jpg" alt="">
+            </div>
+          </div>
+
+          <div class="col-md-6 py-3 py-md-0">
+            <h2>Hello..</h2>
+            <p>We are running this courses website since 2005.We have the best advisiors to clear all your doubts.
+              Advisiors are from IIt mumbai,IIt kharagpur.We are ready to share our knowledge with you. Our team is here to guide you.Have a think on it</p>
+            <button id="about-btn">Read More...</button>
+            
+          </div>
+          
+
+        </div>
+
+      </div>
+    </section>
+    <footer id="footer">
+      <h1><span>C</span>ourses</h1>
+      <p></p>
+      <div class="social-links">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-youtube"></i>
+      </div>
+      <div class="credit">
+        <p>Designed By <a href="#">Renuka</a></p>
+      </div>
+      <div class="copyright">
+        <p>&copy;Copyright Renuka. All Rights Reserved</p>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
